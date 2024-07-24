@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Prefix</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Select Prefix in {{ bucket_name }}</h1>
+        <ul class="list-group">
+            {% for prefix in prefixes %}
+            <li class="list-group-item">
+                <form action="{{ url_for('select_prefix') }}" method="post" style="display:inline;">
+                    <input type="hidden" name="bucket" value="{{ bucket_name }}">
+                    <input type="hidden" name="prefix" value="{{ prefix }}">
+                    <button type="submit" class="btn btn-link">{{ prefix }}</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
