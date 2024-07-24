@@ -154,4 +154,5 @@ Data successfully written to Google Sheets.
 
 - Replace `"hassan.tariq@gmail.com"` and `"fyjfbjdigeufhobe"` with your actual Gmail address and app password.
 - Update the `"Database Statistics"` and `sheet1` with your actual spreadsheet and sheet names.
+- Chat GPT Chat Link https://chatgpt.com/share/d50a5e2f-3727-47ca-bf27-42eedb4a058a
 
